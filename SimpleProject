@@ -1,0 +1,76 @@
+# Simple Git Project – Complete Steps in One File
+
+## 📌 Step 1: Create a Simple Project
+
+mkdir MyGitProject
+cd MyGitProject
+
+
+### Create a file
+
+echo "Hello, this is my Git project!" > app.txt
+
+
+
+## 📌 Step 2: Initialize Git
+git init
+git status
+
+
+
+
+## 📌 Step 3: Add File to Staging Area
+
+git add app.txt
+
+
+## 📌 Step 4: Commit the File
+
+git commit -m "Initial commit with app.txt"
+
+
+## 📌 Step 5: Create a New Branch
+
+git branch feature-update
+git checkout feature-update
+
+
+
+## 📌 Step 6: Modify the File
+
+echo "Adding a new feature to the project." >> app.txt
+
+
+Add + commit
+git add app.txt
+git commit -m "Updated app.txt with new feature"
+
+## 📌 Step 7: Add Remote Repository (GitHub)
+👉 First create a **new empty GitHub repo** (without README).
+
+Then connect it:
+
+git remote add origin https://github.com/<your-username>/MyGitProject.git
+
+
+## 📌 Step 8: Push Branch to GitHub
+
+git push origin feature-update
+
+Merge feature-update into main (from GitHub Pull Request UI)
+
+
+
+## 📌 Step 9: Switch to main and Pull Updated Code
+
+git checkout main
+git pull origin main
+
+
+
+
+## 📌 Step 10: Show Chronological Commit History
+
+git log --oneline --graph --decorate --all
+
+
